@@ -18,8 +18,8 @@ public class TwitterHashtagStorm {
                 "birthday", "international", "olympics", "pets", "friends", "home", "world", "funny", "contest", "game", "exo","bts",
                 "motivation", "giveaway", "tuesday", "travel", "bbc", "people", "photo", "win", "goals", "fitness", "start", "bigbang",
                 "video", "trending", "go", "more", "shop", "like", "facebook", "youtube", "amazon", "gmail", "google",  "blackpink",
-                "ebay", "yahoo", "weather", "craigslist", "mail", "maps", "walmart", "netflix", "translate", "docs", "play", "kpop",
-                "news", "depot", "cnn", "hotmail", "fox", "calculator", "login", "drive", "tracking", "gps", "lowes", "paypal",
+                "ebay", "yahoo", "weather", "craigslist", "mail", "maps", "walmart", "netflix", "translate", "pokemon", "play", "kpop",
+                "news", "depot", "cnn", "hotmail", "fox", "calculator", "login", "drive", "tracking", "gps", "lowes", "paypal", "docs",
                 "instagram", "target", "bank", "pinterest", "twitter", "entertainment", "indeed", "buy", "best", "speed", "test",
                 "trump", "sports", "nba", "mu", "bing", "pizza", "dominos", "you", "restaurants", "outlook", "timer", "time", "korea",
                 "2019", "2020", "cafe", "cafe", "mobile", "coffee", "match", "mocha", "latte", "espresso", "cappuccino", "us", "uk"};
