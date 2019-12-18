@@ -6,7 +6,7 @@ import org.apache.storm.topology.TopologyBuilder;
 import org.apache.storm.tuple.Fields;
 
 public class TwitterHashtagStorm {
-    public static int time = 10000;
+    public static int time = 100000;
 
     public static void main(String[] args) throws Exception {
         String consumerKey = "pazf7nlIgMXstqodNOPCFYfD3";

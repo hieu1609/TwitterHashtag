@@ -1,6 +1,8 @@
 package com.microsoft.example;
 
+import java.io.FileWriter;
 import java.util.Map;
+import java.io.IOException;
 
 import twitter4j.HashtagEntity;
 import twitter4j.Status;
@@ -27,10 +29,19 @@ public class HashtagReaderBolt implements IRichBolt {
 
     @Override
     public void execute(Tuple tuple) {
+        String path = "./Data.txt";
+        boolean append_to_file = true;
         Status tweet = (Status) tuple.getValueByField("tweet");
-        for (HashtagEntity hashtage : tweet.getHashtagEntities()) {
-            System.out.println("Hashtag: " + hashtage.getText());
-            this.collector.emit(new Values(hashtage.getText()));
+        try {
+            FileWriter writer = new FileWriter(path, append_to_file);
+            writer.write(tweet.getText() + "\n");
+            writer.close();
+            for (HashtagEntity hashtage : tweet.getHashtagEntities()) {
+                System.out.println("Hashtag: " + hashtage.getText());
+                this.collector.emit(new Values(hashtage.getText()));
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
